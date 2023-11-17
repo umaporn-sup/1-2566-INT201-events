@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Sign Up Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      label span {
+        color: red;
+      }
+      input {
+        padding: 10px;
+        width: 200px;
+      }
+      input:valid {
+        border: 2px solid green;
+      }
+      input:invalid {
+        border: 2px solid red;
+      }
+
+      button {
+        margin: 10px;
+        color: white;
+        border: 0;
+        width: 200px;
+        padding: 10px;
+        text-transform: uppercase;
+      }
+      #submit {
+        background-color: green;
+      }
+
+      #reset {
+        background-color: tan;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Create new account</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="first_name">username: <span>*</span></label>
+        <input id="first_name" type="text" name="firstname" required />
+
+        <label for="password">Password: <span>*</span></label>
+        <input id="password" type="password" name="password" required />
+        <label for="password">Confirm Password: <span>*</span></label>
+        <input id="repassword" type="password" name="repassword" required />
+      </div>
+      <div>
+        <button id="submit" type="submit" value="Submit New Account">
+          Create new account
+        </button>
+      </div>
+      <div>
+        <button id="reset" type="button" value="Reset All Values">Reset</button>
+      </div>
+    </form>
+    <p></p>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
